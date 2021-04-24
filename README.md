@@ -45,6 +45,7 @@ Make sure you have setup the core system: https://github.com/CERT-Polska/karton
 ```shell
 $ pip install karton-unpacker
 $ git clone https://github.com/c3rb3ru5d3d53c/karton-unpacker-modules.git modules/
+$ find modules/ -name "requirements.txt" | while read i; do pip install -r $i; done
 $ karton-unpacker --config-file /home/karton/karton.ini --modules modules/
 ```
 
