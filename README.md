@@ -39,7 +39,7 @@ A modular Karton Framework service that unpacks common packers like UPX and othe
 
 ## Usage
 
-Make sure you have setup the core system: https://gitlab.services.internal/titan/karton
+Make sure you have setup the core system: https://github.com/CERT-Polska/karton
 
 ```shell
 $ git clone --recursive https://github.com/c3rb3ru5d3d53c/karton-unpacker.git
