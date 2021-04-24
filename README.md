@@ -41,6 +41,14 @@ A modular Karton Framework service that unpacks common packers like UPX and othe
 
 Make sure you have setup the core system: https://github.com/CERT-Polska/karton
 
+**Install from PyPi:**
+```shell
+$ pip install karton-unpacker
+$ git clone https://github.com/c3rb3ru5d3d53c/karton-unpacker-modules.git modules/
+$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/
+```
+
+**Install from Source:**
 ```shell
 $ git clone --recursive https://github.com/c3rb3ru5d3d53c/karton-unpacker.git
 $ cd karton-unpacker/
