@@ -29,7 +29,8 @@ A modular Karton Framework service that unpacks common packers like UPX and othe
 ```json
 {
     "type": "sample",
-    "kind": "raw",
+    "kind": "runnable",
+    "stage": "recognized"
     "payload": {
         "sample": <Resource>,
         "parent": <Resource>,
@@ -46,7 +47,11 @@ Make sure you have setup the core system: https://github.com/CERT-Polska/karton
 $ pip install karton-unpacker
 $ git clone https://github.com/c3rb3ru5d3d53c/karton-unpacker-modules.git modules/
 $ find modules/ -name "requirements.txt" | while read i; do pip install -r $i; done
-$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/
+$ git clone --recursive https://github.com/qilingframework/qiling.git
+# Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
+# Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
+# Once the required DLLs have been collected copy them in the rootfs
+$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
 ```
 
 **Install from Source:**
@@ -56,5 +61,15 @@ $ cd karton-unpacker/
 $ virtualenv venv/
 $ source venv/bin/activate
 $ pip install .
-$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/
+$ git clone --recursive https://github.com/qilingframework/qiling.git
+# Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
+# Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
+# Once the required DLLs have been collected copy them in the rootfs
+$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
 ```
+
+# Testing Your Installation
+
+Once you have completed installing `karton-unpacker`, try uploading the file `tests/shellcode.exe` to mwdb.
+
+If successful, you will see an file in relations with the name `unpacked`, this is the extracted shellcode to spawn `cmd.exe`.

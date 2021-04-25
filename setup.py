@@ -22,10 +22,17 @@ def get_requirements(default):
         result.extend(f.read().splitlines())
     return list(dict.fromkeys(result))
 
+def get_readme():
+    f = open('README.md', 'r')
+    content = f.read()
+    f.close()
+    return content
+
 setup(
     name="karton-unpacker",
     version=version_info["__version__"],
     description="A modular Karton Framework service that unpacks common packers like UPX, MPress and others using the Qilling Framework.",
+    long_description=get_readme(),
     namespace_packages=["karton"],
     packages=["karton.unpacker"],
     install_requires=get_requirements('requirements.txt'),
