@@ -1,1 +1,2 @@
 yara-python==4.0.5
+karton-core==4.2.0

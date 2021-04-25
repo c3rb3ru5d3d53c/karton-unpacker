@@ -18,6 +18,7 @@ def unpacker_module_worker(sample, user_config, module) -> Task:
     module = module.KartonUnpackerModule(sample=sample, config=user_config)
     if module.enabled is True:
         return module.main()
+    return []
 
 class Unpacker(Karton):
 
