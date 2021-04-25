@@ -1,6 +1,16 @@
 # Unpacker Karton Service
 
+![license](https://img.shields.io/github/license/c3rb3ru5d3d53c/karton-unpacker-modules)
+![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)
+![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)
+
 A modular Karton Framework service that unpacks common packers like UPX and others using the Qilling Framework.
+
+This project is FREE as in FREE :beer:, use it commercially, privately or however you see fit.
+
+If you like this project and wish to donate to it's cause you can buy me a :tea: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
+
+
 
 ![objects](docs/img/objects.png)
 *Figure 1: Example of UPX Unpacked Children*
@@ -77,3 +87,7 @@ $ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --roo
 Once you have completed installing `karton-unpacker`, try uploading the file `tests/shellcode.exe` to mwdb.
 
 If successful, you will see an file in relations with the name `unpacked`, this is the extracted shellcode to spawn `cmd.exe`.
+
+# Contributing
+
+If you wish to contribute your own modules please refer to [CONTRIBUTING.md](https://github.com/c3rb3ru5d3d53c/karton-unpacker/blob/master/CONTRIBUTING.md)
