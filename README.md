@@ -93,4 +93,4 @@ If successful, you will see an file in relations with the name `unpacked`, this 
 
 # Contributing
 
-If you wish to contribute your own modules to automatically unpack malware please refer to [CONTRIBUTING.md](https://github.com/c3rb3ru5d3d53c/karton-unpacker/blob/master/CONTRIBUTING.md)
+If you wish to contribute your own modules to automatically unpack malware, please refer to [CONTRIBUTING.md](https://github.com/c3rb3ru5d3d53c/karton-unpacker/blob/master/CONTRIBUTING.md)
