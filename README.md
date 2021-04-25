@@ -3,6 +3,10 @@
 A modular Karton Framework service that unpacks common packers like UPX and others using the Qilling Framework.
 
 ![objects](docs/img/objects.png)
+*Figure 1: Example of UPX Unpacked Children*
+
+![qiling](docs/img/qiling.jpeg)
+*Figure 2: Qiling Framework Unpacking `calc.exe` shellcode from `tests/shellcode.exe`*
 
 **Consumes:**
 ```json
