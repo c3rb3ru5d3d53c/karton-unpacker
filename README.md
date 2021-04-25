@@ -8,7 +8,7 @@ A modular Karton Framework service that unpacks common packers like UPX and othe
 
 This project is FREE as in FREE :beer:, use it commercially, privately or however you see fit.
 
-If you like this project and wish to donate to it's cause you can buy me a :tea: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
+If you like this project and wish to donate, you can buy me a :tea: as I don't drink :beer: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
 
 
 
