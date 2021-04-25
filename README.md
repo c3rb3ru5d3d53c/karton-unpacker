@@ -1,6 +1,9 @@
 # Unpacker Karton Service
 
 ![license](https://img.shields.io/github/license/c3rb3ru5d3d53c/karton-unpacker-modules)
+![pypi-version](https://pypip.in/v/karton-unpacker/badge.png)
+![pypi-downloads](https://pypip.in/d/karton-unpacker/badge.png)
+![pypi-egg](https://pypip.in/wheel/karton-unpacker/badge.svg)
 ![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)
 ![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)
 
@@ -10,7 +13,7 @@ This project is FREE as in FREE :beer:, use it commercially, privately or howeve
 
 If you like this project and wish to donate :moneybag: to support the fight against malware...
 
-Buy me a :tea: as I don't drink :beer: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
+Buy me a :tea:, as I don't drink :beer:, by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
 
 ![objects](docs/img/objects.png)
 *Figure 1: Example of UPX Unpacked Children*
