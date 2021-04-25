@@ -37,9 +37,9 @@ class Unpacker(Karton):
     @classmethod
     def args_parser(cls):
         parser = super().args_parser()
-        parser.add_argument("--modules", help="Modules Directory", required=True)
-        parser.add_argument("--rootfs", help="Emulator RootFS", default=None, required=False)
-        parser.add_argument("--timeout", help="Emulator Timeout", default=5000, required=False)
+        parser.add_argument("--modules", help="Modules Directory", type=str, required=True)
+        parser.add_argument("--rootfs", help="Emulator RootFS", type=str, default=None, required=False)
+        parser.add_argument("--timeout", help="Emulator Timeout", type=int, default=5000, required=False)
         parser.add_argument("--debug", help="Debug", action='store_true', default=False, required=False)
         return parser
 
