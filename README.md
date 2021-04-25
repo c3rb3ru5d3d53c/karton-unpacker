@@ -8,9 +8,9 @@ A modular Karton Framework service that unpacks common packers like UPX and othe
 
 This project is FREE as in FREE :beer:, use it commercially, privately or however you see fit.
 
-If you like this project and wish to donate :moneybag: to support the fight against malware.
+If you like this project and wish to donate :moneybag: to support the fight against malware...
 
-You can buy me a :tea: as I don't drink :beer: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
+Buy me a :tea: as I don't drink :beer: by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
 
 ![objects](docs/img/objects.png)
 *Figure 1: Example of UPX Unpacked Children*
