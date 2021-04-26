@@ -8,7 +8,7 @@
 ![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)
 ![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)
 
-A modular Karton Framework service that unpacks common packers like UPX and others using the Qilling Framework.
+A modular Karton Framework service that unpacks common packers like UPX and others using the [Qiling Framework](https://qiling.io/).
 
 This project is FREE as in FREE :beer:, use it commercially, privately or however you see fit.
 
@@ -20,7 +20,7 @@ Buy me a :tea:, as I don't drink :beer:, by sending me some ₿ to `16oXesi7uv3j
 *Figure 1: Example of UPX Unpacked Children*
 
 ![qiling](https://github.com/c3rb3ru5d3d53c/karton-unpacker/raw/master/docs/img/qiling.jpeg)
-*Figure 2: Qiling Framework Unpacking `calc.exe` shellcode from `tests/shellcode.exe`*
+*Figure 2: [Qiling Framework](https://qiling.io/) Unpacking `calc.exe` shellcode from `tests/shellcode.exe`*
 
 **Consumes:**
 ```json
