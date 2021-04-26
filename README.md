@@ -15,10 +15,10 @@ If you like this project and wish to donate :moneybag: to support the fight agai
 
 Buy me a :tea:, as I don't drink :beer:, by sending me some ₿ to `16oXesi7uv3jdPZxxwarHSD2f3cNMpaih9`
 
-![objects](docs/img/objects.png)
+![objects](https://github.com/c3rb3ru5d3d53c/karton-unpacker/raw/master/docs/img/objects.png)
 *Figure 1: Example of UPX Unpacked Children*
 
-![qiling](docs/img/qiling.jpeg)
+![qiling](https://github.com/c3rb3ru5d3d53c/karton-unpacker/raw/master/docs/img/qiling.jpeg)
 *Figure 2: Qiling Framework Unpacking `calc.exe` shellcode from `tests/shellcode.exe`*
 
 **Consumes:**
