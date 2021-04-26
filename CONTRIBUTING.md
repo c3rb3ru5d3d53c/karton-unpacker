@@ -74,7 +74,7 @@ if __name__ in '__main__':
         print(json.dumps(data, indent=4))
 ```
 
-To test your module:
+**Step 4: Test your Module**
 ```bash
 chmod +x example.py
 ./example.py --input sample.bin

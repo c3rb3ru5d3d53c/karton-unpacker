@@ -8,7 +8,7 @@
 ![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)
 ![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)
 
-A modular Karton Framework service that unpacks common packers like UPX and others using the [Qiling Framework](https://qiling.io/).
+A modular [Karton Framework](https://github.com/CERT-Polska/karton) service that unpacks common packers like [UPX](https://upx.github.io/) and others using the [Qiling Framework](https://qiling.io/).
 
 This project is FREE as in FREE :beer:, use it commercially, privately or however you see fit.
 
