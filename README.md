@@ -47,7 +47,8 @@ Buy me a :tea:, as I don't drink :beer:, by sending me some ₿ to `16oXesi7uv3j
 {
     "type": "sample",
     "kind": "runnable",
-    "stage": "recognized"
+    "stage": "recognized",
+    "platform": <win32|win64> (If PE File in Dump),
     "payload": {
         "sample": <Resource>,
         "parent": <Resource>,
