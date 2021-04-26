@@ -1,7 +1,7 @@
 # Unpacker Karton Service
 
 [![build](https://travis-ci.org/c3rb3ru5d3d53c/karton-unpacker.svg?branch=master)](https://travis-ci.org/c3rb3ru5d3d53c/karton-unpacker)
-![license](https://img.shields.io/github/license/c3rb3ru5d3d53c/karton-unpacker-modules)
+[![license](https://img.shields.io/github/license/c3rb3ru5d3d53c/karton-unpacker-modules)](https://github.com/c3rb3ru5d3d53c/karton-unpacker/blob/master/LICENSE)
 [![pypi-version](https://pypip.in/v/karton-unpacker/badge.png)](https://pypi.org/project/karton-unpacker/)
 [![pypi-downloads](https://pypip.in/d/karton-unpacker/badge.png)](https://pypi.org/project/karton-unpacker/)
 [![pypi-wheel](https://pypip.in/wheel/karton-unpacker/badge.svg)](https://pypi.org/project/karton-unpacker/)
