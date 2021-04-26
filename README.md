@@ -91,7 +91,7 @@ $ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --roo
 
 Once you have completed installing `karton-unpacker`, try uploading the file `tests/shellcode.exe` to mwdb.
 
-If successful, you will see an file in relations with the name `unpacked`, this is the extracted shellcode to spawn `cmd.exe`.
+If successful, you will see a file in relations with the name `unpacked`, this is the extracted shellcode to spawn `cmd.exe`.
 
 # Contributing
 
