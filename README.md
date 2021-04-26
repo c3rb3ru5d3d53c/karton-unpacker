@@ -63,6 +63,9 @@ Make sure you have setup the core system: https://github.com/CERT-Polska/karton
 
 **Install from PyPi:**
 ```shell
+$ sudo apt install -y python3-virtualenv python-is-python3
+$ virtualenv venv/
+$ source venv/bin/activate
 $ pip install karton-unpacker
 $ git clone https://github.com/c3rb3ru5d3d53c/karton-unpacker-modules.git modules/
 $ find modules/ -name "requirements.txt" | while read i; do pip install -r $i; done
@@ -70,11 +73,12 @@ $ git clone --recursive https://github.com/qilingframework/qiling.git
 # Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
 # Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
 # Once the required DLLs have been collected copy them in the rootfs
-$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
+$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
 ```
 
 **Install from Source:**
 ```shell
+$ sudo apt install -y python3-virtualenv python-is-python3
 $ git clone --recursive https://github.com/c3rb3ru5d3d53c/karton-unpacker.git
 $ cd karton-unpacker/
 $ virtualenv venv/
@@ -84,7 +88,7 @@ $ git clone --recursive https://github.com/qilingframework/qiling.git
 # Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
 # Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
 # Once the required DLLs have been collected copy them in the rootfs
-$ karton-unpacker --config-file /home/karton/karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
+$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
 ```
 
 # Testing Your Installation
