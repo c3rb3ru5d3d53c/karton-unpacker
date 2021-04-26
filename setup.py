@@ -6,7 +6,6 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-
 from pathlib import Path
 
 version_path = Path(__file__).parent / "karton/unpacker/__version__.py"
@@ -22,17 +21,16 @@ def get_requirements(default):
         result.extend(f.read().splitlines())
     return list(dict.fromkeys(result))
 
-def get_readme():
-    f = open('README.md', 'r')
-    content = f.read()
-    f.close()
-    return content
+this_directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name="karton-unpacker",
     version=version_info["__version__"],
     description="A modular Karton Framework service that unpacks common packers like UPX, MPress and others using the Qilling Framework.",
-    long_description=get_readme(),
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     namespace_packages=["karton"],
     packages=["karton.unpacker"],
     install_requires=get_requirements('requirements.txt'),
