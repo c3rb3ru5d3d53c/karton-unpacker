@@ -2,11 +2,11 @@
 
 [![build](https://travis-ci.org/c3rb3ru5d3d53c/karton-unpacker.svg?branch=master)](https://travis-ci.org/c3rb3ru5d3d53c/karton-unpacker)
 ![license](https://img.shields.io/github/license/c3rb3ru5d3d53c/karton-unpacker-modules)
-![pypi-version](https://pypip.in/v/karton-unpacker/badge.png)
-![pypi-downloads](https://pypip.in/d/karton-unpacker/badge.png)
-![pypi-egg](https://pypip.in/wheel/karton-unpacker/badge.svg)
-![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)
-![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)
+[![pypi-version](https://pypip.in/v/karton-unpacker/badge.png)](https://pypi.org/project/karton-unpacker/)
+[![pypi-downloads](https://pypip.in/d/karton-unpacker/badge.png)](https://pypi.org/project/karton-unpacker/)
+[![pypi-wheel](https://pypip.in/wheel/karton-unpacker/badge.svg)](https://pypi.org/project/karton-unpacker/)
+[![issues](https://img.shields.io/github/issues/c3rb3ru5d3d53c/karton-unpacker-modules)](https://github.com/c3rb3ru5d3d53c/karton-unpacker/issues)
+[![stars](https://img.shields.io/github/stars/c3rb3ru5d3d53c/karton-unpacker-modules)](https://github.com/c3rb3ru5d3d53c/karton-unpacker/stargazers)
 
 A modular [Karton Framework](https://github.com/CERT-Polska/karton) service that unpacks common packers like [UPX](https://upx.github.io/) and others using the [Qiling Framework](https://qiling.io/).
 
