@@ -1,5 +1,3 @@
-import time
-import signal
 import logging
 import subprocess
 import glob
