@@ -70,14 +70,16 @@ class Unpacker(Karton):
         self.user_config = user_config
 
     def process(self, task: Task) -> None:
-        try:
-            sample = task.get_resource("sample")
-            for module in self.modules:
-                tasks = unpacker_module_worker(sample, self.user_config, module)
-                for task in tasks:
-                    self.send_task(task)
-        except Exception as error:
-            log.error(error)
+        sample = task.get_resource("sample")
+        for module in self.modules:
+            tasks = unpacker_module_worker(sample, self.user_config, module)
+            for task in tasks:
+                self.send_task(task)
+
 
 if __name__ == "__main__":
-    Unpacker().loop()
+    while True:
+        try:
+            Unpacker().loop()
+        except Exception as error:
+            log.error(error)
