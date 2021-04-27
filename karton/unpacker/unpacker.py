@@ -11,9 +11,6 @@ from .__version__ import __version__
 
 log = logging.getLogger(__name__)
 
-def timeout_handler(signal, frame):
-    raise Exception ('task timed out')
-
 def unpacker_module_worker(sample, user_config, module) -> Task:
     spec = importlib.util.spec_from_file_location("module.name", module)
     module = importlib.util.module_from_spec(spec)
@@ -78,8 +75,4 @@ class Unpacker(Karton):
 
 
 if __name__ == "__main__":
-    while True:
-        try:
-            Unpacker().loop()
-        except Exception as error:
-            log.error(error)
+    Unpacker().loop()
