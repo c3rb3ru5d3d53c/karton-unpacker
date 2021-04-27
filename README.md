@@ -73,7 +73,7 @@ $ git clone --recursive https://github.com/qilingframework/qiling.git
 # Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
 # Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
 # Once the required DLLs have been collected copy them in the rootfs
-$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
+$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --timeout 30 --debug
 ```
 
 **Install from Source:**
@@ -88,7 +88,7 @@ $ git clone --recursive https://github.com/qilingframework/qiling.git
 # Due to distribution restriction, Qiling Framework will not bundle Microsoft Windows DLL files and registry.
 # Please use the script qiling/examples/scripts/dllscollector.bat on your Windows machine to collect the required DLLS for the rootfs
 # Once the required DLLs have been collected copy them in the rootfs
-$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --debug
+$ karton-unpacker --config-file karton.ini --modules modules/ --rootfs qiling/examples/rootfs/ --timeout 30 --debug
 ```
 
 # Testing Your Installation
