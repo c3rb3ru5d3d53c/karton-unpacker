@@ -73,6 +73,5 @@ class Unpacker(Karton):
             for task in tasks:
                 self.send_task(task)
 
-
 if __name__ == "__main__":
     Unpacker().loop()
