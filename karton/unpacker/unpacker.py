@@ -1,3 +1,5 @@
+import time
+import signal
 import logging
 import subprocess
 import glob
@@ -10,6 +12,9 @@ from typing import Optional
 from .__version__ import __version__
 
 log = logging.getLogger(__name__)
+
+def timeout_handler(signal, frame):
+    raise Exception ('task timed out')
 
 def unpacker_module_worker(sample, user_config, module) -> Task:
     spec = importlib.util.spec_from_file_location("module.name", module)
@@ -39,7 +44,8 @@ class Unpacker(Karton):
         parser = super().args_parser()
         parser.add_argument("--modules", help="Modules Directory", type=str, required=True)
         parser.add_argument("--rootfs", help="Emulator RootFS", type=str, default=None, required=False)
-        parser.add_argument("--timeout", help="Emulator Timeout", type=int, default=5000, required=False)
+        parser.add_argument("--emulator-timeout", help="Emulator Timeout", type=int, default=5000, required=False)
+        parser.add_argument("--timeout", help="Task Timeout in Seconds", type=int, default=30, required=False)
         parser.add_argument("--debug", help="Debug", action='store_true', default=False, required=False)
         return parser
 
@@ -51,6 +57,7 @@ class Unpacker(Karton):
         user_config = {
             'modules': args.modules,
             'rootfs': args.rootfs,
+            'emulator_timeout': args.emulator_timeout,
             'timeout': args.timeout,
             'debug': args.debug
         }
