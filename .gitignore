@@ -7,3 +7,6 @@ config.ini
 .mypy_cache/
 config.py
 karton.ini
+build/**
+dist/**
+karton_unpacker.egg-info/**
